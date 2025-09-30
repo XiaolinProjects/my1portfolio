@@ -29,9 +29,9 @@ const App = () => (
           <BrowserRouter basename={base}>
             <Routes>
               <Route element={<SiteLayout />}>
-                <Route path="/" element={<Index />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/about" element={<About />} />
+                <Route path="/the-folio-corner/" element={<Index />} />
+                <Route path="/the-folio-corner/projects" element={<Projects />} />
+                <Route path="/the-folio-corner/about" element={<About />} />
                 <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>
