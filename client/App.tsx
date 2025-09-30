@@ -19,16 +19,21 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route element={<SiteLayout />}>
-            <Route path="/" element={<Index />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/about" element={<About />} />
-            <Route path="*" element={<NotFound />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      {(() => {
+        const base = typeof window !== "undefined" && window.location.pathname.startsWith("/the-folio-corner") ? "/the-folio-corner" : undefined;
+        return (
+          <BrowserRouter basename={base}>
+            <Routes>
+              <Route element={<SiteLayout />}>
+                <Route path="/" element={<Index />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/about" element={<About />} />
+                <Route path="*" element={<NotFound />} />
+              </Route>
+            </Routes>
+          </BrowserRouter>
+        );
+      })()}
     </TooltipProvider>
   </QueryClientProvider>
 );
