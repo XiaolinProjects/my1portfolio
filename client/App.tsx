@@ -20,7 +20,11 @@ const App = () => (
       <Toaster />
       <Sonner />
       {(() => {
-        const base = typeof window !== "undefined" && window.location.pathname.startsWith("/the-folio-corner") ? "/the-folio-corner" : undefined;
+        const base =
+          typeof window !== "undefined" &&
+          window.location.pathname.startsWith("/the-folio-corner")
+            ? "/the-folio-corner"
+            : undefined;
         return (
           <BrowserRouter basename={base}>
             <Routes>
