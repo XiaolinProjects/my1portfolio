@@ -4,7 +4,8 @@ import ProjectCard from "@/components/site/ProjectCard";
 const projects = [
   {
     title: "Minimalist Dashboard",
-    description: "Analytics dashboard with clean typography, charts, and theming.",
+    description:
+      "Analytics dashboard with clean typography, charts, and theming.",
     tags: ["React", "Tailwind", "Vite"],
   },
   {
@@ -26,12 +27,15 @@ export default function Index() {
       <section className="relative overflow-hidden">
         <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(40rem_40rem_at_50%_-10%,hsl(var(--primary)/0.15),transparent_60%)]" />
         <div className="container mx-auto px-4 py-24 md:py-32">
-          <p className="text-sm uppercase tracking-widest text-primary">Portfolio</p>
+          <p className="text-sm uppercase tracking-widest text-primary">
+            Portfolio
+          </p>
           <h1 className="mt-3 text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
             Hao — designer & developer building crisp, modern web experiences.
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-foreground/70">
-            I craft fast, accessible interfaces with a focus on clarity and delightful details.
+            I craft fast, accessible interfaces with a focus on clarity and
+            delightful details.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
             <Button asChild className="">
@@ -47,8 +51,12 @@ export default function Index() {
       {/* Featured Projects */}
       <section className="container mx-auto px-4 py-16">
         <div className="flex items-end justify-between gap-4">
-          <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Selected Work</h2>
-          <a href="/projects" className="text-sm text-primary hover:underline">See all</a>
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
+            Selected Work
+          </h2>
+          <a href="/projects" className="text-sm text-primary hover:underline">
+            See all
+          </a>
         </div>
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((p) => (
@@ -61,9 +69,13 @@ export default function Index() {
       <section className="container mx-auto px-4 py-16">
         <div className="grid gap-8 md:grid-cols-2 md:gap-12 items-start">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold tracking-tight">About me</h2>
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
+              About me
+            </h2>
             <p className="mt-4 text-foreground/70">
-              I'm Hao, a full‑stack engineer who turns ideas into polished products. From design systems to data‑driven apps, I build with care and precision.
+              I'm Hao, a full‑stack engineer who turns ideas into polished
+              products. From design systems to data‑driven apps, I build with
+              care and precision.
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
               {[
@@ -74,7 +86,10 @@ export default function Index() {
                 "Accessibility",
                 "Testing",
               ].map((s) => (
-                <span key={s} className="inline-flex items-center rounded-md bg-accent px-2.5 py-1 text-xs font-medium text-accent-foreground border border-border/60">
+                <span
+                  key={s}
+                  className="inline-flex items-center rounded-md bg-accent px-2.5 py-1 text-xs font-medium text-accent-foreground border border-border/60"
+                >
                   {s}
                 </span>
               ))}
@@ -100,9 +115,12 @@ export default function Index() {
       {/* Contact */}
       <section className="container mx-auto px-4 pb-24">
         <div className="rounded-2xl border border-border/70 bg-gradient-to-br from-primary/10 to-transparent p-8 md:p-12">
-          <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Let's build something</h2>
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
+            Let's build something
+          </h2>
           <p className="mt-3 max-w-2xl text-foreground/70">
-            Have a project in mind or want to collaborate? I'm available for select engagements.
+            Have a project in mind or want to collaborate? I'm available for
+            select engagements.
           </p>
           <div className="mt-6">
             <Button asChild>

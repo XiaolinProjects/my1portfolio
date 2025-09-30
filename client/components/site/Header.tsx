@@ -12,13 +12,36 @@ export default function Header() {
           <span className="font-semibold tracking-tight">Hao</span>
         </NavLink>
         <nav className="hidden md:flex items-center gap-6 text-sm">
-          <NavLink to="/" className={({ isActive }) => `hover:text-primary transition-colors ${isActive ? "text-primary" : "text-foreground/70"}`}>Home</NavLink>
-          <NavLink to="/projects" className={({ isActive }) => `hover:text-primary transition-colors ${isActive ? "text-primary" : "text-foreground/70"}`}>Projects</NavLink>
-          <NavLink to="/about" className={({ isActive }) => `hover:text-primary transition-colors ${isActive ? "text-primary" : "text-foreground/70"}`}>About</NavLink>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `hover:text-primary transition-colors ${isActive ? "text-primary" : "text-foreground/70"}`
+            }
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/projects"
+            className={({ isActive }) =>
+              `hover:text-primary transition-colors ${isActive ? "text-primary" : "text-foreground/70"}`
+            }
+          >
+            Projects
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              `hover:text-primary transition-colors ${isActive ? "text-primary" : "text-foreground/70"}`
+            }
+          >
+            About
+          </NavLink>
         </nav>
         <div className="flex items-center gap-2">
           <Button asChild>
-            <a href="mailto:hello@example.com" aria-label="Email Hao">Contact</a>
+            <a href="mailto:hello@example.com" aria-label="Email Hao">
+              Contact
+            </a>
           </Button>
         </div>
       </div>
