@@ -22,8 +22,8 @@ const App = () => (
       {(() => {
         const base =
           typeof window !== "undefined" &&
-          window.location.pathname.startsWith("/the-folio-corner")
-            ? "/the-folio-corner"
+          window.location.hostname.includes("github.io")
+            ? "/my1portfolio"
             : undefined;
         return (
           <BrowserRouter basename={base}>
