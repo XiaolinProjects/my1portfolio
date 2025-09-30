@@ -22,16 +22,16 @@ const App = () => (
       {(() => {
         const base =
           typeof window !== "undefined" &&
-          window.location.pathname.startsWith("/the-folio-corner")
-            ? "/the-folio-corner"
+          window.location.pathname.startsWith("/my1portfolio")
+            ? "/my1portfolio"
             : undefined;
         return (
           <BrowserRouter basename={base}>
             <Routes>
               <Route element={<SiteLayout />}>
-                <Route path="/the-folio-corner/" element={<Index />} />
-                <Route path="/the-folio-corner/projects" element={<Projects />} />
-                <Route path="/the-folio-corner/about" element={<About />} />
+                <Route path="/" element={<Index />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/about" element={<About />} />
                 <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>
