@@ -22,7 +22,8 @@ const App = () => (
       {(() => {
         const base =
           typeof window !== "undefined" &&
-          window.location.hostname.includes("github.io")
+          (window.location.hostname.includes("github.io") ||
+            window.location.pathname.startsWith("/my1portfolio"))
             ? "/my1portfolio"
             : undefined;
         return (
